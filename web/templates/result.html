@@ -9,10 +9,11 @@
 </head>
 <body>
 <h1>Genre Prediction</h1>
-<canvas id="pieChart" width="400" height="400"></canvas>
+<canvas id="pieChart" width="200" height="200"></canvas>
 <script>
-    var genres = {{ genres | tojson }};
-    var probs = {{ probs | tojson }};
+    var predictions = {{ predictions | tojson }};
+    var genres = Object.keys(predictions);
+    var probs = Object.values(predictions);
 
     var ctx = document.getElementById('pieChart').getContext('2d');
     var pieChart = new Chart(ctx, {
