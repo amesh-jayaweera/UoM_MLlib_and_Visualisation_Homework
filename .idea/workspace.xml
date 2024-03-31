@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64a26c96-06fb-4fc2-9c48-f4492aded622" name="Changes" comment="add dataset">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lyrics-classification/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lyrics-classification/train.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/tcc_ceds_music.csv" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/Mendeley dataset.csv" afterDir="false" />
+    <list default="true" id="64a26c96-06fb-4fc2-9c48-f4492aded622" name="Changes" comment="trained model">
+      <change beforePath="$PROJECT_DIR$/lyrics-classification/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/lyrics-classification/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1711863382011</updated>
       <workItem from="1711863383661" duration="615000" />
-      <workItem from="1711878954570" duration="13767000" />
+      <workItem from="1711878954570" duration="14015000" />
     </task>
     <task id="LOCAL-00001" summary="clean">
       <option name="closed" value="true" />
@@ -105,7 +96,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711881216963</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="train model">
+      <option name="closed" value="true" />
+      <created>1711897497715</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711897497715</updated>
+    </task>
+    <task id="LOCAL-00004" summary="trained model">
+      <option name="closed" value="true" />
+      <created>1711897545250</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711897545250</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +121,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="clean" />
     <MESSAGE value="add dataset" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dataset" />
+    <MESSAGE value="train model" />
+    <MESSAGE value="trained model" />
+    <option name="LAST_COMMIT_MESSAGE" value="trained model" />
   </component>
 </project>

@@ -45,15 +45,15 @@ remover = StopWordsRemover(inputCol="words", outputCol="filteredWords")
 word2Vec = Word2Vec(inputCol="filteredWords", outputCol="features")
 
 # Create the model (LogisticRegression)
-lr = LogisticRegression(maxIter=5, regParam=0.01, labelCol="label", featuresCol="features")
+lr = LogisticRegression(maxIter=10, regParam=0.01, labelCol="label", featuresCol="features")
 
 # Create the pipeline
 pipeline = Pipeline(stages=[regexTokenizer, remover, word2Vec, lr])
 
 # Define parameter grid for cross-validation
 paramGrid = ParamGridBuilder() \
-    .addGrid(lr.maxIter, [5]) \
-    .addGrid(lr.regParam, [0.01]) \
+    .addGrid(lr.maxIter, [20]) \
+    .addGrid(lr.regParam, [0.01, 0.001]) \
     .build()
 
 # Define evaluator
