@@ -25,12 +25,12 @@ data = spark.read.format("csv") \
     .option("header", True) \
     .option("inferSchema", True) \
     .option("maxRowsInMemory", 1000000) \
-    .load("../dataset/Mendeley dataset.csv") \
+    .load("../dataset/Merged_dataset.csv") \
     .select("lyrics", "genre") \
     .withColumn("lyrics", fun.lower(fun.col("lyrics")))  # Convert to lowercase for case-insensitivity
 
 # Filter for desired genres
-data = data.filter(fun.col("genre").isin(["pop", "country", "blues", "jazz", "reggae", "rock", "hip hop"]))
+data = data.filter(fun.col("genre").isin(["pop", "country", "blues", "jazz", "reggae", "rock", "hip hop", "soul"]))
 
 # Encode labels
 indexer = StringIndexer(inputCol="genre", outputCol="label")

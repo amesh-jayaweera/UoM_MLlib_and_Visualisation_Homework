@@ -10,7 +10,9 @@
 <body>
 <h1>Genre Prediction</h1>
 <div id="predictedGenre"></div>
-<canvas id="pieChart" width="200" height="200"></canvas>
+<div style="width: 400px; height: 400px">
+    <canvas id="pieChart"></canvas>
+</div>
 <script>
     var predictions = {{ predictions | tojson }};
     var genres = Object.keys(predictions);

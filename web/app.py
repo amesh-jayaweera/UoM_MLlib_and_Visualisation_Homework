@@ -2,7 +2,6 @@ from pyspark.sql import SparkSession
 from flask import Flask, render_template, request
 from pyspark.ml import PipelineModel
 from pyspark.sql import Row
-import pandas as pd
 
 app = Flask(__name__)
 
@@ -14,31 +13,29 @@ spark = SparkSession.builder \
 # Load the trained model
 model = PipelineModel.load("./model/trained_model")  # Update the path here
 
-data = pd.read_csv("/Users/ameshmjayaweera/Documents/UoM_MLlib_and_Visualisation_Homework/dataset/Mendeley dataset.csv")
 
+# def get_key_by_max_value(d):
+#     max_val = max(d.values())
+#     if max_val >= 0.5:
+#         return max(d, key=d.get)
+#     else:
+#         return None
+#
+#
+# def test(lyrics):
+#     prediction = predict_genre(lyrics)
+#
+#     # Extract probabilities
+#     probabilities = prediction.select("probability").collect()[0][0]
+#
+#     # Map probabilities to genre labels
+#     genre_labels = model.stages[-3].labels
+#     genre_probabilities = {genre_labels[i]: float(probabilities[i]) for i in range(len(genre_labels))}
+#
+#     predicted_genre = get_key_by_max_value(genre_probabilities)
+#
+#     return predicted_genre
 
-def get_key_by_max_value(d):
-    max_val = max(d.values())
-    print(max_val)
-    if max_val >= 0.5:
-        return max(d, key=d.get)
-    else:
-        return None
-
-
-def test(lyrics):
-    prediction = predict_genre(lyrics)
-
-    # Extract probabilities
-    probabilities = prediction.select("probability").collect()[0][0]
-
-    # Map probabilities to genre labels
-    genre_labels = model.stages[-3].labels
-    genre_probabilities = {genre_labels[i]: float(probabilities[i]) for i in range(len(genre_labels))}
-
-    predicted_genre = get_key_by_max_value(genre_probabilities)
-
-    return predicted_genre
 
 def predict_genre(lyrics):
     # Create a Spark DataFrame directly from the provided lyrics
@@ -67,23 +64,29 @@ def predict():
 
     print(genre_probabilities)
 
-    predicted_genre = get_key_by_max_value(genre_probabilities)
-
     # Pass genre names and probabilities to the HTML template
-    return render_template('result.html', predictions=genre_probabilities, predicted_genre=predicted_genre)
+    return render_template('result.html', predictions=genre_probabilities)
 
 
-for index, row in data.iterrows():
-    lyrics = row['lyrics']
-    actual_genre = row['genre']
-
-    # Prediction
-    prediction = test(lyrics)
-    print(prediction)
-
-    # Check if prediction is not None and equal to actual genre
-    if prediction is not None and prediction == actual_genre:
-        print(actual_genre, lyrics)
+# f = []
+#
+# for index, row in data.iterrows():
+#     lyrics = row['lyrics']
+#     actual_genre = row['genre']
+#
+#     # Prediction
+#     prediction = test(lyrics)
+#
+#     # Check if prediction is not None and equal to actual genre
+#     if prediction is not None and prediction == actual_genre:
+#         with open("test.txt", "a") as myfile:
+#             if actual_genre not in f:
+#                 print(actual_genre, lyrics)
+#                 myfile.write(f"{actual_genre}          : {lyrics}")
+#                 f.append(actual_genre)
+#
+#     if len(f) >= 4:
+#         break
 
 
 if __name__ == '__main__':
