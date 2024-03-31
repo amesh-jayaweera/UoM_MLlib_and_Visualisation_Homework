@@ -4,11 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64a26c96-06fb-4fc2-9c48-f4492aded622" name="Changes" comment="clean" />
+    <list default="true" id="64a26c96-06fb-4fc2-9c48-f4492aded622" name="Changes" comment="add dataset">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lyrics-classification/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lyrics-classification/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/tcc_ceds_music.csv" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/Mendeley dataset.csv" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Flask Main" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,6 +55,29 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lyrics-classification" />
+      <recent name="$PROJECT_DIR$/dataset" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="web" type="Python.FlaskServer">
+      <module name="web" />
+      <option name="target" value="$PROJECT_DIR$/web/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -45,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1711863382011</updated>
       <workItem from="1711863383661" duration="615000" />
-      <workItem from="1711878954570" duration="1707000" />
+      <workItem from="1711878954570" duration="13767000" />
     </task>
     <task id="LOCAL-00001" summary="clean">
       <option name="closed" value="true" />
@@ -55,7 +97,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711881054254</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add dataset">
+      <option name="closed" value="true" />
+      <created>1711881216963</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711881216963</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -63,6 +113,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="clean" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean" />
+    <MESSAGE value="add dataset" />
+    <option name="LAST_COMMIT_MESSAGE" value="add dataset" />
   </component>
 </project>
