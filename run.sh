@@ -7,12 +7,12 @@ else
     source web/venv/bin/activate
 fi
 
-flask run &
-sleep 3
+flask run --port 8000 &
+sleep 10
 
 # Check if OS is Linux or macOS
 if [ "$(uname)" == "Linux" ]; then
-    xdg-open http://127.0.0.1:5000
+    xdg-open http://127.0.0.1:8000
 elif [ "$(uname)" == "Darwin" ]; then
-    open http://127.0.0.1:5000
+    open http://127.0.0.1:8000
 fi

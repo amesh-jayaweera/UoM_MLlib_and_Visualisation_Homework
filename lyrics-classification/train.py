@@ -8,7 +8,8 @@ from pyspark.ml.feature import (
     StopWordsRemover,
     Word2Vec,
     StringIndexer,
-    RegexTokenizer
+    RegexTokenizer,
+    IndexToString
 )
 from pyspark.ml.tuning import CrossValidator, ParamGridBuilder
 from pyspark.sql import SparkSession
@@ -33,11 +34,6 @@ data = data.filter(fun.col("genre").isin(["pop", "country", "blues", "jazz", "re
 
 # Encode labels
 indexer = StringIndexer(inputCol="genre", outputCol="label")
-data = indexer.fit(data).transform(data)
-
-# Select only necessary columns
-data = data.select("label", "lyrics")
-
 
 # Create preprocessing stages
 regexTokenizer = RegexTokenizer(inputCol="lyrics", outputCol="words", pattern=r'\s+|,')
@@ -47,8 +43,10 @@ word2Vec = Word2Vec(inputCol="filteredWords", outputCol="features")
 # Create the model (LogisticRegression)
 lr = LogisticRegression(maxIter=10, regParam=0.01, labelCol="label", featuresCol="features")
 
+index_decoder = IndexToString(inputCol="prediction", outputCol="predicted_genre", labels=indexer.fit(data).labels)
+
 # Create the pipeline
-pipeline = Pipeline(stages=[regexTokenizer, remover, word2Vec, lr])
+pipeline = Pipeline(stages=[regexTokenizer, remover, word2Vec, indexer, lr, index_decoder])
 
 # Define parameter grid for cross-validation
 paramGrid = ParamGridBuilder() \
