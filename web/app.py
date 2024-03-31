@@ -42,8 +42,10 @@ def predict():
 
     print(genre_probabilities)
 
+    predicted_genre = max(genre_probabilities, key=lambda k: genre_probabilities[k])
+
     # Pass genre names and probabilities to the HTML template
-    return render_template('result.html', predictions=genre_probabilities)
+    return render_template('result.html', predictions=genre_probabilities, predicted_genre=predicted_genre)
 
 
 if __name__ == '__main__':

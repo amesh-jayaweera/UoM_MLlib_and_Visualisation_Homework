@@ -50,8 +50,8 @@ pipeline = Pipeline(stages=[regexTokenizer, remover, word2Vec, indexer, lr, inde
 
 # Define parameter grid for cross-validation
 paramGrid = ParamGridBuilder() \
-    .addGrid(lr.maxIter, [20]) \
-    .addGrid(lr.regParam, [0.01, 0.001]) \
+    .addGrid(lr.maxIter, [20, 30]) \
+    .addGrid(lr.regParam, [0.1, 0.01, 0.001]) \
     .build()
 
 # Define evaluator
