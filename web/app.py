@@ -4,7 +4,6 @@ from flask import Flask, render_template, request
 from pyspark.ml import PipelineModel
 from pyspark.sql import Row
 
-
 app = Flask(__name__)
 
 # Create a SparkSession

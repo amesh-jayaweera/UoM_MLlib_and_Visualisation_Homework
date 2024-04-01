@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ ! -d "venv" ]; then
+if [ ! -d "web/venv" ]; then
     python3 -m venv web/venv
     source web/venv/bin/activate
     pip install -r web/requirements.txt

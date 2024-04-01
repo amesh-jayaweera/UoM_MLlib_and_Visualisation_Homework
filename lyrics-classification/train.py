@@ -16,7 +16,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql import functions as fun
 import nltk
 
-from stemmer import Stemmer
+# from stemmer import Stemmer
 
 warnings.filterwarnings("ignore", category=UserWarning)
 # Create a SparkSession
@@ -46,9 +46,9 @@ regexTokenizer = RegexTokenizer(inputCol="lyrics", outputCol="words", pattern=r'
 # Remove Stop Words
 remover = StopWordsRemover(inputCol="words", outputCol="filteredWords", caseSensitive=False, locale="en_US")
 # Stemming
-stemmer = Stemmer(inputCol="filteredWords", outputCol="stemmedWords")
+# stemmer = Stemmer(inputCol="filteredWords", outputCol="stemmedWords")
 # Word Embeddings
-word2Vec = Word2Vec(inputCol="stemmedWords", outputCol="features")
+word2Vec = Word2Vec(inputCol="filteredWords", outputCol="features")
 
 # Create the model (LogisticRegression)
 lr = LogisticRegression(maxIter=10, regParam=0.01, labelCol="label", featuresCol="features")
@@ -57,7 +57,7 @@ lr = LogisticRegression(maxIter=10, regParam=0.01, labelCol="label", featuresCol
 index_decoder = IndexToString(inputCol="prediction", outputCol="predicted_genre", labels=indexer.fit(data).labels)
 
 # Create the pipeline
-pipeline = Pipeline(stages=[regexTokenizer, remover, stemmer, word2Vec, indexer, lr,
+pipeline = Pipeline(stages=[regexTokenizer, remover, word2Vec, indexer, lr,
                             index_decoder])
 
 # Define parameter grid for cross-validation
