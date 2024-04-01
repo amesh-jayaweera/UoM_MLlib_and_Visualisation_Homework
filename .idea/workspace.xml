@@ -4,51 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64a26c96-06fb-4fc2-9c48-f4492aded622" name="Changes" comment="student dataset">
+    <list default="true" id="64a26c96-06fb-4fc2-9c48-f4492aded622" name="Changes" comment="updated model">
+      <change afterPath="$PROJECT_DIR$/lyrics-classification/stemmer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/Merged_dataset.csv" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/Merged_dataset.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/Student_dataset.csv" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/Student_dataset.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lyrics-classification/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/lyrics-classification/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/metadata/.part-00000.crc" beforeDir="false" afterPath="$PROJECT_DIR$/model/trained_model/metadata/.part-00000.crc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/metadata/part-00000" beforeDir="false" afterPath="$PROJECT_DIR$/model/trained_model/metadata/part-00000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/0_RegexTokenizer_97ff9ccf15b3/metadata/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/0_RegexTokenizer_97ff9ccf15b3/metadata/.part-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/0_RegexTokenizer_97ff9ccf15b3/metadata/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/0_RegexTokenizer_97ff9ccf15b3/metadata/part-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/1_StopWordsRemover_5c241070e598/metadata/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/1_StopWordsRemover_5c241070e598/metadata/.part-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/1_StopWordsRemover_5c241070e598/metadata/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/1_StopWordsRemover_5c241070e598/metadata/part-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/2_Word2Vec_152d3c6800d9/data/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/2_Word2Vec_152d3c6800d9/data/.part-00000-b6153b5c-b8b3-4f4e-8c0e-19148ce93258-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/2_Word2Vec_152d3c6800d9/data/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/2_Word2Vec_152d3c6800d9/data/part-00000-b6153b5c-b8b3-4f4e-8c0e-19148ce93258-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/2_Word2Vec_152d3c6800d9/metadata/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/2_Word2Vec_152d3c6800d9/metadata/.part-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/2_Word2Vec_152d3c6800d9/metadata/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/2_Word2Vec_152d3c6800d9/metadata/part-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/3_StringIndexer_415354c71d7f/data/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/3_StringIndexer_415354c71d7f/data/.part-00000-07fbccfb-dfac-434e-8cde-46d327d6c66e-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/3_StringIndexer_415354c71d7f/data/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/3_StringIndexer_415354c71d7f/data/part-00000-07fbccfb-dfac-434e-8cde-46d327d6c66e-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/3_StringIndexer_415354c71d7f/metadata/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/3_StringIndexer_415354c71d7f/metadata/.part-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/3_StringIndexer_415354c71d7f/metadata/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/3_StringIndexer_415354c71d7f/metadata/part-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/4_LogisticRegression_52d118da70c7/data/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/4_LogisticRegression_52d118da70c7/data/.part-00000-1c2de3bf-ea72-4145-a2d4-28e469dab6d7-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/4_LogisticRegression_52d118da70c7/data/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/4_LogisticRegression_52d118da70c7/data/part-00000-1c2de3bf-ea72-4145-a2d4-28e469dab6d7-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/4_LogisticRegression_52d118da70c7/metadata/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/4_LogisticRegression_52d118da70c7/metadata/.part-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/4_LogisticRegression_52d118da70c7/metadata/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/4_LogisticRegression_52d118da70c7/metadata/part-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/5_IndexToString_34bf59c3ff2f/metadata/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/5_IndexToString_34bf59c3ff2f/metadata/.part-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/5_IndexToString_34bf59c3ff2f/metadata/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/trained_model/stages/5_IndexToString_34bf59c3ff2f/metadata/part-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lyrics-classification/setup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/metadata/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/metadata/.part-00000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/metadata/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/metadata/part-00000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/0_RegexTokenizer_8b5e6cdd9d98/metadata/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/0_RegexTokenizer_8b5e6cdd9d98/metadata/.part-00000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/0_RegexTokenizer_8b5e6cdd9d98/metadata/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/0_RegexTokenizer_8b5e6cdd9d98/metadata/part-00000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/1_StopWordsRemover_861db1bd53af/metadata/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/1_StopWordsRemover_861db1bd53af/metadata/.part-00000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/1_StopWordsRemover_861db1bd53af/metadata/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/1_StopWordsRemover_861db1bd53af/metadata/part-00000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/2_Word2Vec_03475ccc45da/data/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/2_Word2Vec_03475ccc45da/data/.part-00000-71c17f4f-3db5-4c3d-83f5-5e361af65816-c000.snappy.parquet.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/2_Word2Vec_03475ccc45da/data/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/2_Word2Vec_03475ccc45da/data/part-00000-71c17f4f-3db5-4c3d-83f5-5e361af65816-c000.snappy.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/2_Word2Vec_03475ccc45da/metadata/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/2_Word2Vec_03475ccc45da/metadata/.part-00000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/2_Word2Vec_03475ccc45da/metadata/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/2_Word2Vec_03475ccc45da/metadata/part-00000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/3_StringIndexer_5dbe516f1f48/data/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/3_StringIndexer_5dbe516f1f48/data/.part-00000-8085270f-3558-45b1-907f-dcc0e66f34c3-c000.snappy.parquet.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/3_StringIndexer_5dbe516f1f48/data/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/3_StringIndexer_5dbe516f1f48/data/part-00000-8085270f-3558-45b1-907f-dcc0e66f34c3-c000.snappy.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/3_StringIndexer_5dbe516f1f48/metadata/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/3_StringIndexer_5dbe516f1f48/metadata/.part-00000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/3_StringIndexer_5dbe516f1f48/metadata/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/3_StringIndexer_5dbe516f1f48/metadata/part-00000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/4_LogisticRegression_5acdcb557cc7/data/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/4_LogisticRegression_5acdcb557cc7/data/.part-00000-fe088c4f-7eec-4781-b02a-36ea2396a600-c000.snappy.parquet.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/4_LogisticRegression_5acdcb557cc7/data/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/4_LogisticRegression_5acdcb557cc7/data/part-00000-fe088c4f-7eec-4781-b02a-36ea2396a600-c000.snappy.parquet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/4_LogisticRegression_5acdcb557cc7/metadata/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/4_LogisticRegression_5acdcb557cc7/metadata/.part-00000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/4_LogisticRegression_5acdcb557cc7/metadata/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/4_LogisticRegression_5acdcb557cc7/metadata/part-00000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/5_IndexToString_2e9091564060/metadata/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/5_IndexToString_2e9091564060/metadata/.part-00000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/5_IndexToString_2e9091564060/metadata/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/trained_model/stages/5_IndexToString_2e9091564060/metadata/part-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/web/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +90,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -124,7 +131,8 @@
       <option name="presentableId" value="Default" />
       <updated>1711863382011</updated>
       <workItem from="1711863383661" duration="615000" />
-      <workItem from="1711878954570" duration="29268000" />
+      <workItem from="1711878954570" duration="37082000" />
+      <workItem from="1711922430343" duration="7652000" />
     </task>
     <task id="LOCAL-00001" summary="clean">
       <option name="closed" value="true" />
@@ -198,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711910703798</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="updated model">
+      <option name="closed" value="true" />
+      <created>1711913873730</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1711913873730</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +230,7 @@
     <MESSAGE value="implement web interface" />
     <MESSAGE value="update ui" />
     <MESSAGE value="student dataset" />
-    <option name="LAST_COMMIT_MESSAGE" value="student dataset" />
+    <MESSAGE value="updated model" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated model" />
   </component>
 </project>

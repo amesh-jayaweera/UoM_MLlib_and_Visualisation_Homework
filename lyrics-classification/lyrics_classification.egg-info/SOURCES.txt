@@ -1,0 +1,6 @@
+setup.py
+stemmer.py
+lyrics_classification.egg-info/PKG-INFO
+lyrics_classification.egg-info/SOURCES.txt
+lyrics_classification.egg-info/dependency_links.txt
+lyrics_classification.egg-info/top_level.txt
