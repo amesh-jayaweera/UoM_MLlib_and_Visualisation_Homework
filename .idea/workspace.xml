@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="64a26c96-06fb-4fc2-9c48-f4492aded622" name="Changes" comment="finalize code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/trained_model/metadata/.part-00000.crc" beforeDir="false" afterPath="$PROJECT_DIR$/model/trained_model/metadata/.part-00000.crc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/trained_model/metadata/part-00000" beforeDir="false" afterPath="$PROJECT_DIR$/model/trained_model/metadata/part-00000" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +85,7 @@
       <updated>1711863382011</updated>
       <workItem from="1711863383661" duration="615000" />
       <workItem from="1711878954570" duration="37082000" />
-      <workItem from="1711922430343" duration="10842000" />
+      <workItem from="1711922430343" duration="13348000" />
     </task>
     <task id="LOCAL-00001" summary="clean">
       <option name="closed" value="true" />
@@ -186,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711933683529</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="finalize code">
+      <option name="closed" value="true" />
+      <created>1711936030403</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1711936030403</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
