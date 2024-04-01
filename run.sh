@@ -7,7 +7,7 @@ else
     source web/venv/bin/activate
 fi
 
-flask run --port 8000 &
+flask run --host 0.0.0.0 --port 8000 &
 sleep 10
 
 # Check if OS is Linux or macOS
